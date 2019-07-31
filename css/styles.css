@@ -1,0 +1,184 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 76% 9%;
+    padding-left: var(--bpl);
+    background-color: #1a1a1a;
+    color: white;
+    overflow: hidden;
+}
+
+.navbar{
+    grid-column: 1/3;
+    align-self: center;
+    justify-self: left;
+}
+
+.navbar span{
+    font-size: var(--nsfs);
+}
+
+.header{
+    align-self: center;
+    justify-self: left;
+    margin-bottom: 5em;
+    padding-left: var(--hpl);
+}
+
+.header h1{
+    grid-column: 1;
+    font-size: var(--hfs);
+    line-height: 1.1;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    width: var(--hw);
+}
+.header p{
+    line-height: 1.7;
+    font-size: var(--hpfs);
+    font-weight: 400;
+    width: var(--hpw);
+    opacity: 0.3;
+}
+
+.header span{
+    font-weight: 500;
+}
+
+.header a{
+    color: white;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.header a:hover{
+    opacity: 1;
+}
+
+.footer{
+    grid-column: 1/3;
+    align-self: center;
+    justify-self: left;
+}
+
+.footer a{
+    color: white;
+    opacity: 0.3;
+    text-decoration: none;
+    font-size: var(--ffs);
+}
+
+.footer a:hover{
+    opacity: 1;
+}
+
+.footer span{
+     font-size: var(--ffs);
+ }
+
+@media (max-width: 40em) {
+    body{
+        --bpl: 2em;
+    }
+
+    .navbar span{
+        --nsfs: 4vw;
+    }
+
+    .header{
+        --hpl: 1em;
+    }
+
+    .header h1{
+        --hfs: 3em;
+        --hw: 32;
+
+    }
+
+    .header p{
+        --hpw: 20em;
+        --hpfs: 3.4vw;
+    }
+
+    .footer a{
+        --ffs: 4vw;
+    }
+
+    .footer span{
+        --ffs: 4vw;
+    }
+
+}
+
+@media (min-width: 40.063em) {
+    body{
+        --bpl: 6em;
+    }
+
+    .navbar span{
+        --nsfs: 1.7vw;
+    }
+
+    .header{
+        --hpl: 2em;
+    }
+
+    .header h1{
+        --hfs: 5vw;
+        --hw: 60;
+    }
+
+    .header p{
+        --hpw: 25em;
+        --hpfs: 1.6vw;
+    }
+
+    .footer a{
+        --ffs: 1.6vw;
+    }
+
+    .footer span{
+        --ffs: 1.6vw;
+    }
+}
+
+@media (min-width: 64.063em) {
+    body{
+        --bpl: 6em;
+    }
+
+    .navbar span{
+        --nsfs: 1.2vw;
+    }
+
+    .header{
+        --hpl: 2em;
+    }
+
+    .header h1{
+        --hfs: 5vw;
+        --hw: 32;
+    }
+
+    .header p{
+        --hpfs: 1.3vw;
+        --hpw: 35em;
+
+    }
+
+    .footer a{
+        --ffs: 1vw;
+    }
+
+    .footer span{
+        --ffs: 1vw;
+    }
+}
